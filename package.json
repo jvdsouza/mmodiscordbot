@@ -9,6 +9,7 @@
     "rollup": "rollup -c",
     "start": "node build/index.js",
     "dev": "ts-node src/index.ts",
+    "start:no-test": "npm run rollup && npm run start",
     "lint": "eslint ./src --ext .ts"
   },
   "author": "",

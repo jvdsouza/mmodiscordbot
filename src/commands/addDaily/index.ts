@@ -1,1 +1,0 @@
-export { default as addDaily } from './addDaily';
