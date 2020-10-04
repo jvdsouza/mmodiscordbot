@@ -1,0 +1,47 @@
+{
+  "name": "discord_mmo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm run test && rollup -c",
+    "rollup": "rollup -c",
+    "start": "node build/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint ./src --ext .ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.15.0",
+    "npm": ">=6.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@types/jest": "^26.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "babel-jest": "^26.2.2",
+    "eslint": "^7.8.1",
+    "jest": "^26.2.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "ts-jest": "^26.1.4",
+    "ts-node": "^8.10.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.5"
+  }
+}
