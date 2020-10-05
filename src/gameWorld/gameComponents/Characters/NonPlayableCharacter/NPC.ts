@@ -1,11 +1,7 @@
 import { BaseCharacter } from '../BaseCharacter';
-import IPlayer from './IPlayer';
+import INPC from './INPC';
 
-class Player extends BaseCharacter implements IPlayer {
-    private _equipped;
-    private _inventory;
-    private _class;
-
+class NPC extends BaseCharacter implements INPC {
     constructor(
                     name : string,
                     HP : number, 
@@ -20,19 +16,19 @@ class Player extends BaseCharacter implements IPlayer {
                     level: number,
                 ) {
         super(
-                name,
-                HP,
-                defence,
-                magicDefence,
-                resource,
-                strength,
-                intelligence,
-                dexterity,
-                accuracy,
-                avoidability,
-                level,
-            );
+            name,
+            HP,
+            defence,
+            magicDefence,
+            resource,
+            strength,
+            intelligence,
+            dexterity,
+            accuracy,
+            avoidability,
+            level,
+        );
     }
 }
 
-export default Player;
+export default NPC;
