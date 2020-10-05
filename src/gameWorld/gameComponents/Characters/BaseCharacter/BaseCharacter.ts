@@ -1,4 +1,4 @@
-class BaseCharacter {
+abstract class BaseCharacter {
     private _HP;
     private _defence;
     private _magicDefence;
@@ -6,6 +6,7 @@ class BaseCharacter {
     private _strength;
     private _intelligence;
     private _dexterity;
+    private _level;
 
     constructor(
                     HP : Number, 
@@ -15,6 +16,7 @@ class BaseCharacter {
                     strength: Number,
                     intelligence: Number,
                     dexterity: Number,
+                    level: Number,
                 ) {
         this._HP = HP;
         this._resource = resource;
@@ -25,6 +27,7 @@ class BaseCharacter {
         this._strength = strength;
         this._intelligence = intelligence;
         this._dexterity = dexterity;
+        this._level = level;
     }
 
     
@@ -82,6 +85,14 @@ class BaseCharacter {
     
     public set dexterity(dexterity : Number) {
         this._dexterity = dexterity;
+    }
+
+    public get level() : Number {
+        return this._level;
+    }
+    
+    public set level(level : Number) {
+        this._level = level;
     }
     
 }
