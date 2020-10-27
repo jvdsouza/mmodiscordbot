@@ -38,7 +38,7 @@ abstract class BaseCharacter {
         this._strength = strength;
         this._vitality = this._secondaryStatScaling * strength;
         this._intelligence = intelligence;
-        this._wisdom = this._secondaryStatScaling* intelligence;
+        this._wisdom = this._secondaryStatScaling * intelligence;
         this._dexterity = dexterity;
         this._cunning = this._secondaryStatScaling * dexterity;
         this._accuracy = accuracy;
