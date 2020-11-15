@@ -1,8 +1,9 @@
 import ICryptoSmuggler from './ICryptoSmuggler';
 import { BaseClass } from '../BaseClass';
+import { ISkills } from '../BaseClass/Skills';
 
 class CryptoSmuggler<T extends BaseClass> extends BaseClass implements ICryptoSmuggler {
-    constructor(skills : object) {
+    constructor(skills : ISkills) {
         super(
             skills,
             "Crypto Smuggler"
